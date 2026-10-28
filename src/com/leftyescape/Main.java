@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import com.leftyescape.entities.Player;
+
 
 public class Main extends Application {
 
@@ -11,6 +13,10 @@ public class Main extends Application {
     public void start(Stage stage) {
 
         Pane root = new Pane();
+
+        Player lefty = new Player(100, 100);
+        
+        root.getChildren().add(lefty.getBody());
 
         Scene scene = new Scene(root, 800, 600);
 
