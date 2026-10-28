@@ -20,4 +20,21 @@ public class Player {
     public Rectangle getBody() {
         return body;
     }
+
+    public void moveUp() {
+        body.setY(body.getY() - 5);
+    }
+
+    public void moveDown() {
+        body.setY(body.getY() + 5);
+    }
+
+    public void moveLeft() {
+        body.setX(body.getX() - 5);
+    }
+
+    public void moveRight() {
+        body.setX(body.getX() + 5);
+    }
+
 }
