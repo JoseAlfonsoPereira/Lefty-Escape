@@ -22,19 +22,35 @@ public class Player {
     }
 
     public void moveUp() {
-        body.setY(body.getY() - 5);
+
+        if (body.getY() > 0) {
+            body.setY(body.getY() - 5);
+        }
+
     }
 
     public void moveDown() {
-        body.setY(body.getY() + 5);
+
+        if (body.getY() < 560) {
+            body.setY(body.getY() + 5);
+        }
+
     }
 
     public void moveLeft() {
-        body.setX(body.getX() - 5);
+
+        if (body.getX() > 0) {
+            body.setX(body.getX() - 5);
+        }
+
     }
 
     public void moveRight() {
-        body.setX(body.getX() + 5);
+
+        if (body.getX() < 760) {
+            body.setX(body.getX() + 5);
+        }
+
     }
 
 }
